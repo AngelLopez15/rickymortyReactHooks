@@ -1,38 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 0;
+}
+
 .App {
+  background-color: #f2f2f2f2;
+  /* background-color: red; */
+}
+
+.App-dark {
+  background-color: #03062ef2;
+}
+
+.light-button {
+  background-color: #f8f5a8;
+}
+
+.dark-button {
+  background-color: rgb(5, 19, 42);
+  color: #c4c4c4;
+}
+
+.titulo-personajes {
   text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titulo-personajes-dark {
+  color: #c4c4c4;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.personajes {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.personaje {
+  border-radius: 20px;
+  margin: 2rem;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 5px 2px #c4c4c4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.personaje-dark {
+  border-radius: 20px;
+  margin: 2rem;
+  background-color: rgb(56, 25, 112);
+  box-shadow: 0 2 5 0 #000;
+  border: none;
+}
+
+.img-card {
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.card-body {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.text {
+  color: rebeccapurple;
+}
+
+.text-dark {
+  color: #c4c4c4;
 }
